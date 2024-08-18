@@ -27,11 +27,13 @@ For browser I use Firefox, with DuckDuckGo search engine.
 
 - I do have a lot of stuff downloaded whether that's git, npm - which I won't list here as it contains a lot of stuff.
 
-## VS Code (currently not using)
+## Code Editor
+
+### VS Code (currently not using)
 
 Link to my VS Code settings and keybindings: https://github.com/viktorsynek/setup/tree/main/vscode
 
-## NeoVIM (currently using)
+### NeoVIM (currently using)
 
 Link to config: https://github.com/viktorsynek/setup/tree/main/nvim
 
