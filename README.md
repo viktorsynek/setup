@@ -29,12 +29,12 @@ For browser I use Firefox, with DuckDuckGo search engine.
 
 ## VS Code (currently not using)
 
-Link to my VS Code settings and keybindings: https://github.com/viktorsynek/setup/vscode/
+Link to my VS Code settings and keybindings: https://github.com/viktorsynek/setup/tree/main/vscode
 
 ## NeoVIM (currently using)
 
-Link to config: https://github.com/viktorsynek/setup/nvim/
+Link to config: https://github.com/viktorsynek/setup/tree/main/nvim
 
 ## Window Manager
 
-I use i3wm (i3) - Link to config: https://github.com/viktorsynek/setup/i3/
+I use i3wm (i3) - Link to config: https://github.com/viktorsynek/setup/tree/main/i3
