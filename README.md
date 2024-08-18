@@ -1,5 +1,5 @@
 # Viktor Synek's setup
-## You will find almost every information of my setups here, whether that's my OS, Settings, Code editor config, and so on.
+You will find almost every information of my setups here, whether that's my OS, Settings, Code editor config, and so on.
 
 ## Operating System
 
@@ -31,10 +31,10 @@ For browser I use Firefox, with DuckDuckGo search engine.
 
 Link to my VS Code settings and keybindings: https://github.com/viktorsynek/setup/vscode/
 
-### NeoVIM (currently using)
+## NeoVIM (currently using)
 
 Link to config: https://github.com/viktorsynek/setup/nvim/
 
-### Window Manager
+## Window Manager
 
 I use i3wm (i3) - Link to config: https://github.com/viktorsynek/setup/i3/
