@@ -7,10 +7,6 @@
 
 - I do have Windows using VirtualBox, if I ever need it, but I won't talk about that at all, as I use it once every blue moon.
 
-- The only things I changed in Ubuntu settings, are: dark appearance, and some keybind shortcuts.
-
-- For my dash I use Dash to Panel: https://extensions.gnome.org/extension/1160/dash-to-panel/
-
 ## Browser
 
 For browser I use Firefox, with DuckDuckGo search engine. 
