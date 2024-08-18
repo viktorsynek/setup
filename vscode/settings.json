@@ -1,0 +1,71 @@
+{
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": false,
+	"explorer.confirmDragAndDrop": false,
+	"zenMode.hideLineNumbers": false,
+	"explorer.confirmDelete": false,
+	"editor.wordWrap": "wordWrapColumn",
+	"prettier.useTabs": true,
+	"editor.fontSize": 16,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.mouseWheelZoom": true,
+	"editor.lineNumbers": "relative",
+	"javascript.suggest.autoImports": false,
+	"launch": {
+		"configurations": [],
+		"compounds": []
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"workbench.settings.applyToAllProfiles": [],
+	"workbench.colorTheme": "Andromeda'84-black",
+	"workbench.editor.enablePreview": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"git.autofetch": true,
+	"vim.leader": "<space>",
+
+	// KEYBINDS
+	"vim.normalModeKeyBindingsNonRecursive": [
+		// MOVE BETWEEN TABS
+		{ "before": ["<S-h>"], "commands": [":bprevious"] },
+		{ "before": ["<S-l>"], "commands": [":bnext"] },
+
+		// SPLIT
+		{ "before": ["leader", "v"], "commands": [":vsplit"] },
+		{ "before": ["leader", "s"], "commands": [":split"] },
+
+		// MOVE BETWEEN SPLITS
+		{
+			"before": ["leader", "h"],
+			"commands": ["workbench.action.focusLeftGroup"]
+		},
+		{
+			"before": ["leader", "j"],
+			"commands": ["workbench.action.focusBelowGroup"]
+		},
+		{
+			"before": ["leader", "k"],
+			"commands": ["workbench.action.focusAboveGroup"]
+		},
+		{
+			"before": ["leader", "l"],
+			"commands": ["workbench.action.focusRightGroup"]
+		},
+		// Focus Terminal
+		{
+			"before": ["<C-j>"],
+			"commands": ["workbench.action.terminal.focusNext"],
+			"when": "terminalFocus"
+		},
+		{
+			"before": ["<C-k>"],
+			"commands": ["workbench.action.terminal.focusPrevious"],
+			"when": "terminalFocus"
+		}
+	],
+	"editor.stickyScroll.enabled": false,
+	"workbench.statusBar.visible": false,
+	"workbench.iconTheme": "vscode-icons",
+	"glassit.alpha": 205
+}
