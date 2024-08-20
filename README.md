@@ -40,3 +40,12 @@ Link to config: https://github.com/viktorsynek/setup/tree/main/nvim
 ## Window Manager
 
 I use i3wm (i3) - Link to config: https://github.com/viktorsynek/setup/tree/main/i3
+
+## Hardware
+
+CPU - Intel Core i5-9600K
+GPU - GeForce GTX 1050Ti
+RAM - 16GB 4MHz
+Display - **Primary:** AOC 24" 165Hz ; **Secondary:** HP Compaq LA2306x
+Keyboard - ZSA Moonlander Cherry MX Brown swithces
+Mouse - Logitech G305
