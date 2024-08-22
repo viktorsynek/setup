@@ -16,7 +16,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 floating_modifier $mod
 
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal -e tmux
 
 bindsym $mod+Shift+q kill
 
@@ -153,10 +153,6 @@ exec_always --no-startup-id ~/startup_launch.sh
 # Launch browser
 bindsym $mod+Shift+b exec firefox
 
-# Picom for transparency
-exec --no-startup-id killall picom
-exec --no-startup-id picom
-
 # Bind screenshot
 bindsym $mod+Shift+p exec flameshot gui
 
@@ -165,6 +161,18 @@ exec_always --no-startup-id ~/set-default-audio.sh
 
 # Set computer screen to turn black after 15 minutes
 exec --no-startup-id xset s 900 900
+
+# Set default languages for keyboard
+exec --no-startup-id setxkbmap -layout us,hu -variant ,qwerty
+
+# Set default refresh rate to 144
+exec --no-startup-id ~/set-refresh-rate.sh 
+
+# Switch keyboard layout
+bindsym $mod+Shift+space exec "setxkbmap -layout us,hu -variant ,qwerty -option grp:alt_shift_toggle"
+
+# Picom for transparency
+exec --no-startup-id picom &
 
 # Window title
 focus_follows_mouse no
