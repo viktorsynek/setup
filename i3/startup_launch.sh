@@ -25,7 +25,7 @@ create_workspace_and_launch() {
 }
 
 # Workspace 1 on HDMI-0 with terminal
-create_workspace_and_launch 1 $PRIMARY "i3-sensible-terminal"
+create_workspace_and_launch 1 $PRIMARY "i3-sensible-terminal -e tmux"
 
 # Workspace 2 on HDMI-0 with Firefox
 create_workspace_and_launch 2 $PRIMARY "firefox"
