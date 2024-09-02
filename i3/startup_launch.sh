@@ -24,14 +24,14 @@ create_workspace_and_launch() {
     i3-msg "[workspace=$workspace] move workspace to output $monitor"
 }
 
-# Workspace 1 on HDMI-0 with terminal
-create_workspace_and_launch 1 $PRIMARY "i3-sensible-terminal -e tmux"
+# Workspace 1 on HDMI-0 with terminal (increased wait time to 3 second)
+create_workspace_and_launch 1 $PRIMARY "i3-sensible-terminal -e 'tmux new-session -A -s main'" 3
 
 # Workspace 2 on HDMI-0 with Firefox
 create_workspace_and_launch 2 $PRIMARY "firefox"
 
-# Workspace 3 on DVI-D-0 with Discord (increased wait time to 10 seconds)
-create_workspace_and_launch 3 $SECONDARY "discord" 8
+# Workspace 3 on DVI-D-0 with Discord (increased wait time to 7 seconds)
+create_workspace_and_launch 3 $SECONDARY "discord" 7
 
 # Workspace 4 on DVI-D-0 with Firefox
 create_workspace_and_launch 4 $SECONDARY "firefox"
