@@ -23,11 +23,13 @@ For browser I use Firefox, with DuckDuckGo search engine.
 
 ## Terminal
 
-- I use the default i3 terminal with tmux: ``i3-sensible-terminal -e tmux`` 
+- I use the zsh terminal with tmux
 
 - I do have a lot of stuff downloaded via terminal, whether that's git, npm - which I won't list here as it contains a lot of stuff.
 
 Link to my .tmux.conf https://github.com/viktorsynek/setup/tree/main/tmux
+
+Link to my .zshrc https://github.com/viktorsynek/setup/tree/main/zsh
 
 ## Code Editor
 
