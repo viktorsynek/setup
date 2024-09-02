@@ -16,7 +16,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 floating_modifier $mod
 
-bindsym $mod+Return exec i3-sensible-terminal -e tmux
+bindsym $mod+Return exec i3-sensible-terminal -e "zsh -c 'tmux new-session -A -s main'"
 
 bindsym $mod+Shift+q kill
 
@@ -114,10 +114,10 @@ mode "resize" {
     bindsym semicolon resize grow width 10 px or 10 ppt
 
     # Arrow key bindings for resizing
-    bindsym Left resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Left resize grow width 5 px or 10 ppt
+    bindsym Down resize grow height 5 px or 10 ppt
+    bindsym Up resize shrink height 5 px or 10 ppt
+    bindsym Right resize shrink width 5 px or 10 ppt
 
     # Exit resize mode
     bindsym Return mode "default"
@@ -142,7 +142,7 @@ bar {
 }
 
 # Set wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Pictures/Anime/r00d.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Anime/r00dfullhd.png
 
 # Define correct displays
 exec_always --no-startup-id xrandr --output HDMI-0 --primary
@@ -167,6 +167,7 @@ exec --no-startup-id setxkbmap -layout us,hu -variant ,qwerty
 
 # Set default refresh rate to 144
 exec --no-startup-id ~/set-refresh-rate.sh 
+exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 144.00
 
 # Switch keyboard layout
 bindsym $mod+Shift+space exec "setxkbmap -layout us,hu -variant ,qwerty -option grp:alt_shift_toggle"
@@ -185,4 +186,4 @@ client.urgent           #BF616A #FFFFFF #BF616A #BF616A
 client.placeholder      #000000 #000000 #000000 #000000
 
 # Font for window titles
-font pango:monospace 0
+font pango:monospace 1
