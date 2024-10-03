@@ -169,11 +169,12 @@ exec --no-startup-id setxkbmap -layout us,hu -variant ,qwerty
 exec --no-startup-id ~/set-refresh-rate.sh 
 exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 144.00
 
-# Switch keyboard layout
-bindsym $mod+Shift+space exec "setxkbmap -layout us,hu -variant ,qwerty -option grp:alt_shift_toggle"
+
+# Switch keyboard layout between English and Hungarian
+bindsym Mod1+Shift+u exec "setxkbmap -layout us,hu -option 'grp:alt_shift_toggle'"
 
 # Picom for transparency
-exec --no-startup-id picom &
+#exec --no-startup-id picom &
 
 # Window title
 focus_follows_mouse no
